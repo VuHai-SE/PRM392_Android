@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đặt thức ăn và đồ uống"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btnChonThucAn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHỌN THỨC ĂN"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnChonDoUong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHỌN ĐỒ UỐNG"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THOÁT"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:gravity="center" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">QLSV_SE160835_NET1717</string>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>

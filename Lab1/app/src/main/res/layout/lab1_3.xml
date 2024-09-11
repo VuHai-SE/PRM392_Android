@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- App bar -->
+
+    <!-- Spacer -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#6200EE"
+        android:padding="16dp"
+        android:text="Demo Application"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Title Text -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:text="Sign In Form"
+        android:textSize="24sp" />
+
+    <!-- Username Input -->
+
+    <!-- Password Input -->
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Username"
+        android:marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:marginTop="12dp" />
+
+    <!-- Sign Up Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:marginTop="24dp"
+        android:text="Not account yet? Create one" />
+
+    <!-- Horizontal Line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:background="#D3D3D3" />
+
+    <!-- Sign In Button -->
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="24dp"
+        android:background="#6200EE"
+        android:text="SIGN IN"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

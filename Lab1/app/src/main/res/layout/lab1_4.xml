@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/facebook_blue"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/logoFB"
+        android:layout_width="134dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logoFB" />
+
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoFB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="English • Change"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/emailOrPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/language"
+        android:layout_marginTop="77dp"
+        android:backgroundTint="@android:color/white"
+        android:hint="Email or Phone"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailOrPhone"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:backgroundTint="@android:color/white"
+        android:padding="12dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/white"
+        android:text="Log In"
+        android:textColor="@color/facebook_blue" />
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="245dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/loginButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="71dp"
+        android:gravity="center"
+        android:text="Sign Up for Facebook"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Forgot Password?"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

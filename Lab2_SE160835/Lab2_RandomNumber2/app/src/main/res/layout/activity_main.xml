@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:layout_alignParentTop="true"
+        android:background="#B5AAD1"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="True Random Number Generator"
+        android:textColor="#000"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextMin"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
+        android:hint="Min number..."
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/editTextMax"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_below="@id/editTextMin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
+        android:hint="Max number..."
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/buttonGenerate"
+        android:text="Generate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMax"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background"
+        android:padding="10dp"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonGenerate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="94dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Result:"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:id="@+id/scrollViewHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="196dp"
+        android:layout_below="@id/textViewResult"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="28dp"
+        android:background="@android:color/white"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+</RelativeLayout>

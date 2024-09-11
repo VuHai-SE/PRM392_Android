@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Lab2R2SActivity">
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số thứ nhất"
+        android:inputType="numberSigned|numberDecimal"
+        android:layout_marginTop="16dp"
+        android:background="#CACACA"
+        android:padding="10dp" />
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số thứ hai"
+        android:inputType="numberSigned|numberDecimal"
+        android:layout_marginTop="16dp"
+        android:background="#CACACA"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CỘNG"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/buttonSubtract"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TRỪ"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+        <Button
+            android:id="@+id/buttonMultiply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="NHÂN"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/buttonDivide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CHIA"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kết quả:"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/textViewError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="Return to Lab2 menu"
+        android:textSize="25sp" />
+</LinearLayout>
